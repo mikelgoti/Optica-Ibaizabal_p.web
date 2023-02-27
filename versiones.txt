@@ -1,0 +1,39 @@
+VERSION PARA EL FILTRO DE PRODUCTOS 1
+-------------------------------------
+Dentro del fondo negro incluir los
+filtros de los productos.
+-------------------------------------
+
+.productos__filtro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+}
+
+.productos__filtro h3{
+    color: #fff;
+}
+
+.productos__cantidad{
+    color: var(--text-color1);
+}
+
+.productos__linea{
+    position: relative;
+}
+
+.productos__linea::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: green;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.productos__objeto{
+    cursor: pointer;
+}

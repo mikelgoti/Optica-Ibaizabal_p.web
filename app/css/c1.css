@@ -1,0 +1,78 @@
+/*<=================================================>*/
+/*<==================== PASARELA ====================>*/
+/*<=================================================>*/
+.slider {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.slider-images {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.slider-image {
+    position: relative;
+}
+
+.slider-image img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-image-title {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    color: black;
+}
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.slider-prev {
+    left: 0;
+}
+
+.slider-next {
+    right: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .slider-image img {
+        margin-right: 300px;
+        margin-left: 87px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--text-color);
+        padding-right: 20px;
+    }
+
+    .slider-image-title {
+        position: absolute;
+        bottom: 10px;
+        left: 100px;
+        color: black;
+    }
+}

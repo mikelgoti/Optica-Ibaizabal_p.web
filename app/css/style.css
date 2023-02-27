@@ -1,0 +1,923 @@
+/*<=================================================>*/
+/*<==================== GOOGLE FONTS ====================>*/
+/*<=================================================>*/
+
+/*<=================================================>*/
+/*<==================== VARIABLES ====================>*/
+/*<=================================================>*/
+:root{
+    /*<==================== COLORS ====================>*/
+    --black-color: hsl(206,12%,12%);
+    --card-color: hsl(0,0%,90%);
+    --title-color: hsl(206,12%,12%);
+    --text-color1: hsl(206,4%,42%);
+    --text-color-light: rgb(255, 255, 255);
+    --text-color: hsl(206,4%,75%);
+    --body-color: hsl(206,4%,97%);
+    --container-color: #fff;
+    --green-color: hsl();
+
+    /*<==================== Fonts ====================>*/
+    --body-font: 'Lato', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --font-bold: 700;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*<==================== RESPONSIVE FONTS WEIGHT ====================>*/
+@media screen and (min-width: 968px){
+    :root{
+        --biggest-font-size: 3.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+    
+}
+
+/*<=================================================>*/
+/*<==================== CSS GLOBAL ====================>*/
+/*<=================================================>*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: rgb(236, 236, 236);
+    color: var(--text-color);
+}
+
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+h1,h2,h3{
+    line-height: 140%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/*MEHHH*/
+.container{
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding: 3rem 0 2rem;
+}
+
+.section__title{
+    position: relative;
+    font-size: var(--h1-font-size);
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+    padding-top: -2rem;
+    color: white;
+}
+
+.section__title::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 5px;
+    height: 20px;
+    background-color: green;
+}
+
+/*<=================================================>*/
+/*<==================== HEADER ====================>*/
+/*<=================================================>*/
+
+header{
+    width: 100%;
+}
+
+.header__container{
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    background: linear-gradient(160deg,hsla(206,5%,24%,1)-4%,hsla(206,12%,12%,1)46%);
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav__container{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav__titulo h1{
+    color: green;
+}
+.icon__grid{
+    color:rgb(138, 248, 136);
+}
+
+.nav__logo{
+    color: rgb(255, 255, 255);;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    column-gap: .5rem;
+    font-weight: var(--font-bold);
+}
+
+/*
+    INSERTAMOS EL LOGO CUANDO LO HAGA
+*/
+.nav__logo i{
+    font-size: 40px;
+}
+
+.icon__grid{
+    display: inline;
+    padding-right: 0.7rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .nav__menu{
+        position: fixed;
+        background-color: var(--black-color);
+        top: 0;
+        right:-100%;
+        width: 100%;
+        height: 100%;
+        transition: .6s;
+    }
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 3rem;
+    padding-top: 9rem;
+}
+
+.nav__list__link a{
+    text-transform: uppercase;
+    color: hsl(206,4%,75%);
+    font-size: var(--h1-font-size);
+    transition: .4s;
+}
+
+.nav__list__link a:hover{
+    color: #fff;
+}
+
+.icon__close{
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+/*<=================================================>*/
+/*<==================== EFECTOS Y ANIMACIONES ====================>*/
+/*<=================================================>*/
+
+.show-menu{
+    right: 0;
+}
+
+/*.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px hsla(0,4%,15%,.1);
+}*/
+
+.scroll-header{
+    position: fixed;
+    
+}
+
+.scroll-header .nav__logo,
+.scroll-header .icon__grid,
+.scroll-header .nav__titulo h1{
+    color: green;
+}
+
+.icon__close:hover{
+    color: rgb(171, 255, 146);
+    text-shadow: 0 10px 5px green;
+}
+
+/*<=================================================>*/
+/*<==================== HOME ====================>*/
+/*<=================================================>*/
+
+.home{
+    gap: 0;
+}
+
+.home__container{
+    padding: 7rem 2rem 2.5rem 2rem;
+    background: linear-gradient(160deg,hsla(206,5%,24%,1)-4%,hsla(206,12%,12%,1)46%);
+}
+
+.home_content{
+    position: relative;
+}
+
+.home__title,
+.home__data-title{
+    color: #fff;
+}
+
+.home__title{
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.home__title span{
+    color: green;
+}
+
+.home__description{
+    margin-bottom: 1rem;
+}
+
+.home__number{
+    margin-bottom: 1.5rem;
+}
+
+.home__data{
+    border-top: 1px solid var(--text-color);
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1.5rem;
+}
+
+.home__data-number{
+    color: green;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.home__data-title{
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.contenedor__cita{
+    overflow: hidden;
+}
+
+.contenedor__cita span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.home__image__scroll{
+    position: absolute;
+    width: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.image__fondo__home{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*<=================================================>*/
+/*<==================== OFERTAS DEL MES ====================>*/
+/*<=================================================>*/
+.cuadrado__negro__container_ofertas{
+    padding-top: 0;
+    margin-top: 3rem;
+    background-color: var(--black-color);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    position: relative;
+    top: -55px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 0;
+    padding-left: -30px;
+    overflow: hidden;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+
+/*<=================================================>*/
+/*<==================== SPECIALITY ====================>*/
+/*<=================================================>*/
+
+.cuadrado__negro__container_especialidades{
+    padding-top: 0;
+    margin-top: 3rem;
+    background-color: var(--black-color);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+/*<=================================================>*/
+/*<==================== COMIENZO ANIMACION LAGO ====================>*/
+/*<=================================================>*/
+
+.main-block{
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("Lago.jpg");
+    background-size: cover;
+    background-position: 50% 100%;
+    overflow: hidden;
+}
+
+
+
+.main-block .box{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 186%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("Lago.jpg");
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+.main-block .box:nth-child(1){
+    filter: blur(3px);
+    background-position: bottom 500px;
+}
+
+.main-block .box:nth-child(2){
+    clip-path: circle(50px at 30% 70%);
+    animation: arribai 6s infinite;
+}
+
+.main-block .box:nth-child(3){
+    clip-path: circle(50px at 60% 70%);
+    animation: arribad 6s infinite;
+}
+
+@keyframes arribai{
+    0%{
+        clip-path: circle(39.5px at 39% 85%);
+    }
+    25%{
+        clip-path: circle(39.5px at 39% 60.7%);
+    }
+    50%{
+        clip-path: circle(39.5px at 39% 60.7%);
+    }
+    80%{
+        clip-path: circle(39.5px at 39% 85%);
+    }
+    100%{
+        clip-path: circle(39.5px at 39% 85%);
+    }
+}
+
+@keyframes arribad{
+    0%{
+        clip-path: circle(39.5px at 65% 85%);
+    }
+    25%{
+        clip-path: circle(39.5px at 65% 60.7%);
+    }
+    50%{
+        clip-path: circle(39.5px at 65% 60.7%);
+    }
+    80%{
+        clip-path: circle(39.5px at 65% 85%);
+    }
+    100%{
+        clip-path: circle(39.5px at 65% 85%);
+    }
+}
+
+
+.gafas_animacion{
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    top: -90px;
+    animation: scrollup 6s infinite;
+}
+
+@keyframes scrollup{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-7rem);
+    }
+    80%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*<=================================================>*/
+/*<==================== FIN ANIMACION LAGO ====================>*/
+/*<=================================================>*/
+
+.container__specialidad .section__titulo{
+    padding-left: 2rem;
+}
+
+.y{
+    padding-left: 4.5rem;
+    color: green;
+}
+
+.span_productos{
+    text-align: right;
+}
+
+.container__specialidad .section__titulo hr{
+    border: none; 
+    height: 5px; 
+    color: #333; 
+    background-color: #333; 
+}
+.oferta__especilidad{
+    top: -130px;
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oferta__especilidad h2{
+    font-size: var(--h1-font-size);
+    font-style: var(--font-bold);
+    font-weight: bolder;
+
+}
+
+.speciality__category{
+    position: relative;
+    margin-top: -6rem;
+    display: grid;
+    grid-template-columns: 225px;
+    justify-content: center;
+    row-gap: 2rem;
+    margin-left: 1rem;
+}
+
+.speciality__category span{
+    color: green;
+}
+
+#imagen__especial{
+    margin-bottom: -2.1rem;
+}
+
+.speciality__img{
+    width: 210px;
+    margin-bottom: -1rem;
+    transition: .4s;
+}
+
+.speciality__group{
+    text-align: center;
+}
+
+.speciality__title{
+    font-size: 27px;
+    margin-bottom: .25rem;
+}
+
+.speciality__group:hover .speciality__img{
+    transform: translateY(-.40rem);
+}
+
+.speciality__description{
+    font-size: 17px;
+}
+
+/*<=================================================>*/
+/*<==================== PRODUCTOS ====================>*/
+/*<=================================================>*/
+
+.cuadrado__negro__container_productos{
+    padding-top: 0;
+    margin-top: 3rem;
+    background-color: var(--black-color);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+/*PRODUCTOS FILTROS*/
+
+.productos__filtro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+}
+
+.productos__filtro h3{
+    color: #fff;
+}
+
+.productos__cantidad{
+    color: var(--text-color1);
+}
+
+.productos__linea{
+    position: relative;
+}
+
+.productos__linea::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: green;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.productos__objeto{
+    cursor: pointer;
+}
+
+/*TITULO + DESC SLIDER*/
+
+.titulo_slider_desc{
+    position: relative;
+    display: grid;
+    grid-template-columns: 225px;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2rem;
+    margin-left: 1rem;
+}
+
+.titulo_slider_desc__title{
+    font-size: 28px;
+}
+
+.titulo_slider_desc__title span{
+    color: green;
+}
+
+.titulo_slider_desc__description{
+    margin-top: -2rem;
+    text-align: center;
+    font-size: 17px;
+    color: var(--text-color1);
+}
+
+/*PROPUESTA LIQUIDOS*/
+#propuesta_liquidos{
+    margin-left: -6rem;
+    margin-top: 60px;
+}
+
+#propuesta_liquidos img{
+    max-width: 335px;
+    height: 250px;
+    padding: 10px;
+    background-color: var(--text-color);
+    border-radius: 20px;
+}
+
+#propuesta_liquidos .titulo_mas_desc_prop_liquidos{
+    margin-right: -6rem;
+}
+
+#propuesta_liquidos .titulo_mas_desc_prop_liquidos p{
+    margin-top: 0;
+}
+
+#button-speciality{
+    display: inline-block;
+    margin: 20px 20px 10px 15px;
+    background-color: var(--black-color);
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .25rem;
+}
+/*<=================================================>*/
+/*<==================== SERVICIOS ====================>*/
+/*<=================================================>*/
+.cuadrado__negro__container_servicios{
+    padding-top: 0;
+    margin-top: 3rem;
+    background-color: var(--black-color);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+/*<=================================================>*/
+/*<==================== SLIDER MARCAS Y LOGOS ====================>*/
+/*<=================================================>*/
+
+.slider_footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_footer_track{
+    order: 2;
+    position: absolute;
+    display: flex;
+    border: solid;
+    height: 150px;
+    background: white;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+}
+
+.slide_footer{
+    height: 130px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    animation: mover-x 20s linear infinite;
+    
+}
+
+.slide_footer img{
+    height: 100%;
+}
+
+
+@keyframes mover-x{
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-500%);}
+}
+
+.slider_footer::before, .slider_footer::after{
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, white 0%,rgba(255,255,255,0) 100%);
+    z-index: 2;
+}
+
+.slider_footer::before{
+    left: 0;
+    top: 0;
+}
+
+.slider_footer::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/*<=================================================>*/
+/*<==================== FOOTER ====================>*/
+/*<=================================================>*/
+
+footer{
+    background: var(--black-color);
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer__title{
+    color: white;
+    font-size: var(--h1-font-size);
+    margin-bottom: 30px;
+}
+
+.footer__description{
+    margin-bottom: 10px;
+}
+
+.footer__newsletter{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.footer__input{
+    border: none;
+    outline: none;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+    width: 70%;
+}
+
+.footer__button{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    background-color: green;
+}
+
+.footer__content h2{
+    color:var(--text-color1);
+    margin-bottom: 10px;
+}
+
+.footer__content{
+    row-gap: 2.3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--text-color1);
+}
+
+.footer__group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.footer__redes_sociales{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__redes_sociales i{
+    color: green;
+}
+
+.footer_derechos_reservados .footer__derechos span{
+    color:white;
+    font-size: 20px;
+}
+/*.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    overflow: hidden;
+    color: blue;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(211, 12, 12);
+    bottom: -6px;
+
+}
+
+#rs h4::before{
+    content: '';
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(211, 12, 12);
+    bottom: -6px;
+}
+
+#rs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-col ul li{
+    padding: 10px 0;
+}
+
+.footer-col ul li a{
+    color: rgb(117, 227, 14);
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+
+@media(max-width: 550px){
+    footer .row{
+        flex-direction: column;
+    }
+}*/
+
+
+
+
