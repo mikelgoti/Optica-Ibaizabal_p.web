@@ -32,6 +32,41 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+/*<==================== FUENTES ====================>*/
+@font-face {
+    font-family: 'Museo Moderno';
+    src: url("../fuentes/modern/MuseoModerno-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo footer';
+    src: url("../fuentes/modern/MuseoModerno-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Genos';
+    src: url("../fuentes/Genos/Genos-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url("../fuentes/Arimo/Arimo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bai';
+    src: url("../fuentes/Bai/BaiJamjuree-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*<==================== RESPONSIVE FONTS WEIGHT ====================>*/
 @media screen and (min-width: 968px){
@@ -109,7 +144,7 @@ button{
 }
 
 .section{
-    padding: 3rem 0 2rem;
+    padding: 1rem 0 1rem;
 }
 
 .section__title{
@@ -154,12 +189,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+} 
+
+#titulo__header{
+    font-family: 'Museo Moderno', sans-serif;
+    /*color: var(--text-color);*/
+    color: white;
+    /*width: 301px;*/
+    font-size: 2.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
 }
 
-
-.nav__titulo h1{
-    color: green;
-}
 .icon__grid{
     color:rgb(138, 248, 136);
 }
@@ -212,6 +254,7 @@ header{
     color: hsl(206,4%,75%);
     font-size: var(--h1-font-size);
     transition: .4s;
+    font-family: "Genos", sans-serif;
 }
 
 .nav__list__link a:hover{
@@ -267,16 +310,32 @@ header{
 
 .home__container{
     padding: 7rem 2rem 2.5rem 2rem;
-    background: linear-gradient(160deg,hsla(206,5%,24%,1)-4%,hsla(206,12%,12%,1)46%);
+    background: linear-gradient(160deg,hsla(206,5%,24%,1)30%,hsla(206,12%,12%,1)46%);
 }
 
 .home_content{
     position: relative;
 }
 
-.home__title,
+.home__title{
+    font-family: var(--body-font);
+    color: white;
+}
+
 .home__data-title{
-    color: #fff;
+    font-family: var(--body-font);
+    color: white;
+    overflow: hidden;
+}
+
+.home__data p{
+    font-family: "Museo Moderno";
+}
+
+#productos-exclusivos{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
 }
 
 .home__title{
@@ -289,6 +348,7 @@ header{
 }
 
 .home__description{
+    font-family: "Museo Moderno";
     margin-bottom: 1rem;
 }
 
@@ -325,6 +385,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    font-family: var(--body-font);
 }
 
 .home__image__scroll{
@@ -359,11 +420,6 @@ header{
 .cuadrado__negro__container_ofertas{
     padding-top: 0;
     margin-top: 3rem;
-    background-color: var(--black-color);
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
     position: relative;
     top: -55px;
     width: 100%;
@@ -374,10 +430,18 @@ header{
     border-radius: 0;
     padding-left: -30px;
     overflow: hidden;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    background: linear-gradient(160deg,hsla(206,5%,24%,1)-4%,hsla(206,12%,12%,1)46%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: var(--body-font);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
 }
 
+.cuadrado__negro__container_ofertas h2{
+    overflow: hidden;
+}
 
 /*<=================================================>*/
 /*<==================== SPECIALITY ====================>*/
@@ -386,9 +450,18 @@ header{
 .cuadrado__negro__container_especialidades{
     padding-top: 0;
     margin-top: 3rem;
-    background-color: var(--black-color);
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    overflow: hidden;
+    background: linear-gradient(160deg,hsla(206,5%,24%,1)-4%,hsla(206,12%,12%,1)46%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: var(--body-font);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+}
+
+.cuadrado__negro__container_especialidades h2{
+    overflow: hidden;
 }
 
 /*<=================================================>*/
@@ -509,8 +582,10 @@ header{
 /*<==================== FIN ANIMACION LAGO ====================>*/
 /*<=================================================>*/
 
-.container__specialidad .section__titulo{
-    padding-left: 2rem;
+.container__specialidad img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .y{
@@ -592,13 +667,18 @@ header{
 /*<=================================================>*/
 
 .cuadrado__negro__container_productos{
-    padding-top: 0;
-    margin-top: 3rem;
-    background-color: var(--black-color);
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    padding-top: -1rem;
+    margin-top: 1rem;
+    background: linear-gradient(160deg,hsla(206,5%,24%,1)-4%,hsla(206,12%,12%,1)46%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: "Museo Moderno";
+}
+
+.cuadrado__negro__container_productos h2{
+    overflow: hidden;
 }
 
 /*PRODUCTOS FILTROS*/
@@ -611,6 +691,7 @@ header{
 
 .productos__filtro h3{
     color: #fff;
+    font-family: var(--body-font);
 }
 
 .productos__cantidad{
@@ -635,6 +716,28 @@ header{
 
 .productos__objeto{
     cursor: pointer;
+}
+
+/*CONDICIONES MEDIOAMBIENTALES*/
+.condiciones__medioambientales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.condiciones_medioambientales_lista{
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 4rem;
+}
+
+.lista_ambiental_elemento h3{
+    margin-top: 0.5rem;
+}
+
+#sol{
+    
 }
 
 /*TITULO + DESC SLIDER*/
@@ -698,13 +801,21 @@ header{
 /*<==================== SERVICIOS ====================>*/
 /*<=================================================>*/
 .cuadrado__negro__container_servicios{
-    padding-top: 0;
-    margin-top: 3rem;
-    background-color: var(--black-color);
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    padding: 0;
+    margin-top: 1rem;
+    background: linear-gradient(160deg,hsla(206,5%,24%,1)-4%,hsla(206,12%,12%,1)46%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: "Museo Moderno";
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+}
+
+.cuadrado__negro__container_servicios h2{
+    overflow: hidden;
 }
 
 /*<=================================================>*/
@@ -776,26 +887,38 @@ header{
 /*<=================================================>*/
 
 footer{
-    background: var(--black-color);
+    background: hsla(206,12%,12%,1);
     align-items: center;
     justify-content: center;
-    padding: 4rem 0 1rem;
+    padding: 3.5rem 0 1.5rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .footer__title{
-    color: white;
+    text-align: center;
+    color: var(--text-color1);
+    font-family: "Museo Moderno";
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
     font-size: var(--h1-font-size);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+#footer-title-id{
+    font-size: 2.5rem;
 }
 
 .footer__description{
-    margin-bottom: 10px;
+    margin-left: 27px;
+    margin-bottom: 15px;
 }
 
 .footer__newsletter{
     display: flex;
+    justify-content: center;
     gap: 0.5rem;
     margin-bottom: 20px;
 }
@@ -805,7 +928,7 @@ footer{
     outline: none;
     padding: 1rem 1rem;
     border-radius: 0.3rem;
-    width: 70%;
+    width: 71%;
 }
 
 .footer__button{

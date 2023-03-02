@@ -10,9 +10,18 @@
     <!----------------------------------------------->
     <!-------------------- LINKS -------------------->
     <!----------------------------------------------->
+
+    <!--GOOGLE FONT
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">-->
+    
+    <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <!--CSS-->
     <link rel="stylesheet" href="app/css/style.css">
     <link rel="stylesheet" href="app/css/c1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -33,7 +42,7 @@
                 </div>
 
                 <div class="nav__titulo" id="nav-titulo">
-                    <h1>OPTICA IBAIZABAL</h1>
+                    <h1 id="titulo__header">ÓPTICA IBAIZABAL</h1>
                 </div>
                 
                 <div class="nav__menu" id="nav-menu">
@@ -93,7 +102,7 @@
                             <h2 class="home__data-number">
                                 340+
                             </h2>
-                            <h3 class="home__data-title">
+                            <h3 class="home__data-title" id="productos-exclusivos">
                                 Productos Exclusivos
                             </h3>
                             <p class="home__data-description">
@@ -132,7 +141,7 @@
                 <div class="speciality__container">
                     <div class="speciality__box">
                         <h2 class="section__title">
-                            Especialistas en gafas graduadas que te harán </br> ver de nuevo!
+                            Especialistas en gafas </br> graduadas que te harán </br> ver de nuevo!
                         </h2>
                     </div>
                 </div>
@@ -154,12 +163,7 @@
         <di class="container__specialidad">
             <div class="oferta__especilidad">
                 <div class="oferta__especialidad__titulo">
-                    <h2 class="section__titulo">
-                        <span>SERVICIOS</span><br> 
-                        <span class="y">&</span><br>
-                        <span class="span_productos">PRODUCTOS</span>
-                        <hr>
-                    </h2>
+                    <img src="app/imgs/especialidad/demo_final.png" id="titulo__especialidad__servicios__productos" width="380px">
                 </div>
             </div>
             
@@ -224,6 +228,31 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="condiciones__medioambientales">
+            <div class="condiciones__medioambientales__titulo">
+                <h1>Resistentes a...</h1>
+            </div>
+            <div class="condiciones_medioambientales_lista">
+                <ul class="condiciones_medioambientales_lista">
+                    
+                    <li class="lista_ambiental_elemento">
+                        <img src="app/imgs/resistencia/dia-lluvioso.png" width="50px">
+                        <h3 class="titulo_resistencia">Lluvia</h3>
+                    </li>
+                    
+                    <li class="lista_ambiental_elemento">
+                        <img src="app/imgs/resistencia/sol3.png" width="50px">
+                        <h3 class="titulo_resistencia" id="sol">Sol</h3>
+                    </li>
+
+                    <li class="lista_ambiental_elemento">
+                        <img src="app/imgs/resistencia/viento.png" width="50px">
+                        <h3 class="titulo_resistencia">Lluvia</h3>
+                    </li>
+                </ul>
             </div>
         </div>
         
@@ -532,7 +561,7 @@
 
 
         <div class="footer__container container">
-            <h1 class="footer__title">OPTICA IBAIZABAL</h1>
+            <h1 class="footer__title" id="footer-title-id">ÓPTICA IBAIZABAL</h1>
             <div class="footer__content grid">
                 <div class="footer__data">
                     <p class="footer__description">
@@ -564,7 +593,7 @@
                 </div>
 
                 <div class="footer__data">
-                    <h2 class="footer__subtitle">Óptica</h2>
+                    <h2 class="footer__subtitle">Horario</h2>
                     <p class="footer__information">
                         Lunes - Sabado<br>
                         09:00AM - 19:30PM
