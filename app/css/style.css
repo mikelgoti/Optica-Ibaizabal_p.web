@@ -196,7 +196,7 @@ header{
     /*color: var(--text-color);*/
     color: white;
     /*width: 301px;*/
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow-y: hidden;
@@ -726,14 +726,31 @@ header{
     margin-top: 30px;
 }
 
+.lista_ambiental_elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.condiciones__medioambientales__titulo h1{
+    color: white;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
 .condiciones_medioambientales_lista{
     display: flex;
-    margin-top: 1.5rem;
+    margin-top: 0.7rem;
     gap: 4rem;
+}
+
+#ambiental_icono_viento{
+    
 }
 
 .lista_ambiental_elemento h3{
     margin-top: 0.5rem;
+    color: white;
 }
 
 #sol{
