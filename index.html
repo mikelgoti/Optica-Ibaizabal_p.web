@@ -23,7 +23,8 @@
     
     <!--CSS-->
     <link rel="stylesheet" href="app/css/style.css">
-    <link rel="stylesheet" href="app/css/c1.css">
+    <link rel="stylesheet" href="app/css/slider_graduadas.css">
+    <link rel="stylesheet" href="app/css/slider_sol.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -31,40 +32,44 @@
     <!----------------------------------------------->
     <!-------------------- HEADER -------------------->
     <!----------------------------------------------->
-    <header>
-        <div class="on__scroll__title">
+    <section class="inicio" id="inicio">
+        <header>
+            <div class="on__scroll__title">
+                
+            </div>
+            <div class="header__container" id="header">
+                <div class="nav__container">
+                    <div class="nav__logo" id="nav-logo">
+                        <img src="logo/ojopestañas.png" alt="" width="70px">
+                    </div>
+    
+                    <div class="nav__titulo" id="nav-titulo">
+                        <h1 id="titulo__header">ÓPTICA IBAIZABAL</h1>
+                    </div>
+                    
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list" id="nav-menu">
+                            <li class="nav__list__link"><a href="#inicio" class="nav__link">INICIO</a></li>
+                            <li class="nav__list__link"><a href="#novedades-promociones" class="nav__link">NOVDEDADES</a></li>
+                            <li class="nav__list__link"><a href="#especialidades-general" class="nav__link">ESPECIALIDADES</a></li>
+                            <li class="nav__list__link"><a href="#productos-general" class="nav__link">PRODUCTOS</a></li>
+                            <li class="nav__list__link"><a href="#servicios-general" class="nav__link">SERVICIOS</a></li>
+                            <li class="nav__list__link"><a href="#contacto-general" class="nav__link">CONTACTO</a></li>
+                    
+                            <div class="icon__close" id="icon-close">
+                                <i class='bx bx-x'></i>
+                            </div>
+                        </ul>
+                    </div>
             
-        </div>
-        <div class="header__container" id="header">
-            <div class="nav__container">
-                <div class="nav__logo" id="nav-logo">
-                    <img src="logo/ojopestañas.png" alt="" width="70px">
-                </div>
-
-                <div class="nav__titulo" id="nav-titulo">
-                    <h1 id="titulo__header">ÓPTICA IBAIZABAL</h1>
-                </div>
-                
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list" id="nav-menu">
-                        <li class="nav__list__link"><a href="#services">SERVICIOS</a></li>
-                        <li class="nav__list__link"><a href="#oferts">OFERTAS</a></li>
-                        <li class="nav__list__link"><a href="#glasses">GAFAS</a></li>
-                        <li class="nav__list__link"><a href="#sports">DEPORTES</a></li>
-                
-                        <div class="icon__close" id="icon-close">
-                            <i class='bx bx-x'></i>
-                        </div>
-                    </ul>
-                </div>
-        
-                <div class="icon__grid" id="icon-grid">
-                    <i class='bx bxs-grid'></i>
+                    <div class="icon__grid" id="icon-grid">
+                        <i class='bx bxs-grid'></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-    </header>
+            
+        </header>
+    </section>
 
     <!----------------------------------------------->
     <!-------------------- HOME -------------------->
@@ -75,7 +80,7 @@
                 <div class="home__content">
                     <h1 class="home__title">
                         Elije las gafas <br/> 
-                        que mas de gusten <br/> 
+                        que mas te gusten <br/> 
                         y disfruta<span>.</span>
                     </h1>
                     <p class="home__description">
@@ -121,19 +126,22 @@
         <!----------------------------------------------->
         <!-------------------- OFERTAS DE ESTE MES -------------------->
         <!----------------------------------------------->
-        <div class="cuadrado__negro__container_ofertas" id="ofertas__mes__titulo">
-            <div class="speciality section container" id="speciality2">
-                <div class="speciality__container">
-                    <div class="speciality__box">
-                        <h2 class="section__title">
-                            Ofertas de este mes </br> no te las pierdas!
-                        </h2>
+        <section class="novedades_promociones" id="novedades-promociones">
+            <div class="cuadrado__negro__container_ofertas" id="ofertas__mes__titulo">
+                <div class="speciality section container" id="speciality2">
+                    <div class="speciality__container">
+                        <div class="speciality__box">
+                            <h2 class="section__title">
+                                Ofertas de este mes </br> no te las pierdas!
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!----------------------------------------------->
+        <section class="especialidades_general" id="especialidades-general">
+            <!----------------------------------------------->
         <!-------------------- ESPECIALITY -------------------->
         <!----------------------------------------------->
         <div class="cuadrado__negro__container_especialidades">
@@ -192,442 +200,456 @@
                     </p>
                 </div>
             </div>
+        </section>
 
         <!----------------------------------------------->
         <!-------------------- PRODUCTOS -------------------->
         <!----------------------------------------------->
-        <div class="cuadrado__negro__container_productos">   
-            <div class="speciality section container" id="speciality1">
-                <div class="speciality__container">
-                    <div class="speciality__box">
-                        <h2 class="section__title">
-                            PRODUCTOS
-                        </h2>
-
-                        <ul class="productos__filtro">
-                            <li class="productos__objeto productos__linea">
-                                <h3 class="productos__titulo">Gafas graduadas!</h3>
-                                <span class="productos__cantidad">20 tipos distintos.</span>
-                            </li>
-                
-                            <li class="productos__objeto">
-                                <h3 class="productos__titulo">Gafas de sol!</h3>
-                                <span class="productos__cantidad">25 tipos distintos.</span>
-                            </li>
-                
-                            <li class="productos__objeto productos__linea">
-                                <h3 class="productos__titulo">Propuesta Liquidos!</h3>
-                                <span class="productos__cantidad">5 tipos.</span>
-                            </li>
-                
-                            <li class="productos__objeto">
-                                <h3 class="productos__titulo">Coordones y accesorios!</h3>
-                                <span class="productos__cantidad">Variedad para personalizar.</span>
-                            </li>
-                        </ul>
-                        
-                        <div class="condiciones__medioambientales">
-                            <div class="condiciones__medioambientales__titulo">
-                                <h1>Resistentes a...</h1>
+        <section class="productos_general" id="productos-general">
+            <div class="cuadrado__negro__container_productos">   
+                <div class="speciality section container" id="speciality1">
+                    <div class="speciality__container">
+                        <div class="speciality__box">
+                            <h2 class="section__title">
+                                PRODUCTOS
+                            </h2>
+    
+                            <ul class="productos__filtro">
+                                <li class="productos__objeto productos__linea">
+                                    <h3 class="productos__titulo">Gafas graduadas!</h3>
+                                    <span class="productos__cantidad">20 tipos distintos.</span>
+                                </li>
+                    
+                                <li class="productos__objeto">
+                                    <h3 class="productos__titulo">Gafas de sol!</h3>
+                                    <span class="productos__cantidad">25 tipos distintos.</span>
+                                </li>
+                    
+                                <li class="productos__objeto productos__linea">
+                                    <h3 class="productos__titulo">Propuesta Liquidos!</h3>
+                                    <span class="productos__cantidad">5 tipos.</span>
+                                </li>
+                    
+                                <li class="productos__objeto">
+                                    <h3 class="productos__titulo">Coordones y accesorios!</h3>
+                                    <span class="productos__cantidad">Variedad para personalizar.</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="condiciones__medioambientales">
+                                <div class="condiciones__medioambientales__titulo">
+                                    <h1>Resistentes a...</h1>
+                                </div>
+                                <div class="condiciones_medioambientales_lista">
+                                    <ul class="condiciones_medioambientales_lista">
+                                        
+                                        <li class="lista_ambiental_elemento">
+                                            <img src="app/imgs/resistencia/dia-lluvioso.png" width="50px">
+                                            <h3 class="titulo_resistencia">Lluvia</h3>
+                                        </li>
+                                        
+                                        <li class="lista_ambiental_elemento">
+                                            <img src="app/imgs/resistencia/sun1.png" width="50px">
+                                            <h3 class="titulo_resistencia" id="sol">Sol</h3>
+                                        </li>
+                    
+                                        <li class="lista_ambiental_elemento">
+                                            <img src="app/imgs/resistencia/vientog.png" width="50px" id="ambiental_icono_viento">
+                                            <h3 class="titulo_resistencia">Viento</h3>
+                                        </li>
+                                        
+                                        <li class="lista_ambiental_elemento">
+                                            <img src="app/imgs/resistencia/termometro1.png" width="50px">
+                                            <h3 class="titulo_resistencia">Temperatura</h3>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="condiciones_medioambientales_lista">
-                                <ul class="condiciones_medioambientales_lista">
-                                    
-                                    <li class="lista_ambiental_elemento">
-                                        <img src="app/imgs/resistencia/dia-lluvioso.png" width="50px">
-                                        <h3 class="titulo_resistencia">Lluvia</h3>
-                                    </li>
-                                    
-                                    <li class="lista_ambiental_elemento">
-                                        <img src="app/imgs/resistencia/sun1.png" width="50px">
-                                        <h3 class="titulo_resistencia" id="sol">Sol</h3>
-                                    </li>
-                
-                                    <li class="lista_ambiental_elemento">
-                                        <img src="app/imgs/resistencia/vientog.png" width="50px" id="ambiental_icono_viento">
-                                        <h3 class="titulo_resistencia">Viento</h3>
-                                    </li>
-                                    
-                                    <li class="lista_ambiental_elemento">
-                                        <img src="app/imgs/resistencia/termometro1.png" width="50px">
-                                        <h3 class="titulo_resistencia">Temperatura</h3>
-                                    </li>
-                                </ul>
+                            
+                            <!--SLIDER GAFAS__GRADUADAS-->
+            
+                            <div class="slider__graduadas">
+    
+                                <input type="radio" name="grad_images" id="i1" checked>
+                                <input type="radio" name="grad_images" id="i2">
+                                <input type="radio" name="grad_images" id="i3">
+                                <input type="radio" name="grad_images" id="i4">
+                                
+                                <div class="slider__graduadas_img" id="grad_one">
+                                    <img src="app/imgs/gafa-1.jpeg" alt="">
+    
+                                    <label for="i4" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="i2" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="slider__graduadas_img" id="grad_two">
+                                    <img src="app/imgs/gafa-2.png" alt="">
+    
+                                    <label for="i1" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="i3" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="slider__graduadas_img" id="grad_three">
+                                    <img src="app/imgs/logo.jpg" alt="">
+    
+                                    <label for="i2" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="i4" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="slider__graduadas_img" id="grad_four">
+                                    <img src="app/imgs/logo2.jpg" alt="">
+    
+                                    <label for="i3" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="i1" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="grad_nav">
+                                    <label class="grad_dots" id="grad_dot1" for="i1"></label>
+                                    <label class="grad_dots" id="grad_dot2" for="i2"></label>
+                                    <label class="grad_dots" id="grad_dot3" for="i3"></label>
+                                    <label class="grad_dots" id="grad_dot4" for="i4"></label>
+                                </div>
                             </div>
+    
+                            <!--TITULO + DESC SLIDER GRADUADAS-->
+    
+                            <div class="titulo_slider_desc">
+                                <h3 class="titulo_slider_desc__title">Gafas Graduadas<span>.</span></h3>
+                                <p class="titulo_slider_desc__description">
+                                    Variedad entre las mejores gafas de diseño. Tanto vintage como modernas.
+                                </p>
+                            </div>
+    
+                            <!--SLIDER GAFAS_DE_SOL-->
+                            <div class="slider__sol">
+    
+                                <input type="radio" name="sol_images" id="s1" checked>
+                                <input type="radio" name="sol_images" id="s2">
+                                <input type="radio" name="sol_images" id="s3">
+                                <input type="radio" name="sol_images" id="s4">
+                                
+                                <div class="slider__sol_img" id="sol_one">
+                                    <img src="app/imgs/gafa-1.jpeg" alt="">
+    
+                                    <label for="s4" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="s2" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="slider__sol_img" id="sol_two">
+                                    <img src="app/imgs/gafa-2.png" alt="">
+    
+                                    <label for="s1" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="s3" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="slider__sol_img" id="sol_three">
+                                    <img src="app/imgs/logo.jpg" alt="">
+    
+                                    <label for="s2" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="s4" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="slider__sol_img" id="sol_four">
+                                    <img src="app/imgs/logo2.jpg" alt="">
+    
+                                    <label for="s3" class="pre"><i class="fa-solid fa-chevron-left"></i></label>
+                                    <label for="s1" class="nxt"><i class="fa-solid fa-chevron-right"></i></label>
+                                </div>
+    
+                                <div class="sol_nav">
+                                    <label class="sol_dots" id="sol_dot1" for="s1"></label>
+                                    <label class="sol_dots" id="sol_dot2" for="s2"></label>
+                                    <label class="sol_dots" id="sol_dot3" for="s3"></label>
+                                    <label class="sol_dots" id="sol_dot4" for="s4"></label>
+                                </div>
+                            </div>
+    
+                            <!--TITULO + DESC SLIDER SOL-->
+                            <div class="titulo_slider_desc">
+                                <h3 class="titulo_slider_desc__title">Gafas de Sol<span>.</span></h3>
+                                <p class="titulo_slider_desc__description">
+                                    Gafas de marca para protegerse del sol.
+                                </p>
+                            </div>
+    
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
+            
+            
+            <!--PROPUESTA LIQUIDOS-->
+    
+            <!--TITULO + DESC SLIDER SOL-->
+            <!--<div class="titulo_slider_desc" id="propuesta_liquidos">
+                <img src="app/imgs/liquido.jpg" id="prupuesta_liquidos_imagen">
+                <div class="titulo_mas_desc_prop_liquidos">
+                    <h3 class="titulo_slider_desc__title">Propuesta Liquidos<span>.</span></h3>
+                    <p class="titulo_slider_desc__description">
+                        Liquidos para la mejora de las gafas.
+                    </p>
+                    <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
+                </div>
+            </div>-->
+    
+            <div class="propuesta_liquidos_contenedor">
+                <div class="propuesta_liquidos_img">
+                    <img src="app/imgs/liquido.jpg">
+                </div>
+    
+                <div class="propuesta_liquidos_titulo-desc">
+                    <h3 class="titulo_slider_desc__title">Propuesta Liquidos<span>.</span></h3>
+                    <p class="titulo_slider_desc__description">
+                        Liquidos para la mejora de las gafas.
+                    </p>
+                    <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
+                </div>
+            </div>
+    
+            <!--CORDONES-->
+            <!--TITULO + DESC SLIDER SOL-->
+            <div class="titulo_slider_desc" id="propuesta_liquidos">
+                <img src="app/imgs/cordones.jpg">
+                <div class="titulo_mas_desc_prop_liquidos">
+                    <h3 class="titulo_slider_desc__title">Cordones<span>.</span></h3>
+                    <p class="titulo_slider_desc__description">
+                        Cordones coloridos para adultos y niños.
+                    </p>
+                </div>
+            </div>
+        </section>
         
-        <!--SLIDER GAFAS__GRADUADAS-->
-        
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slider-images">
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-2.jpg" alt="image 1">
-                        <div class="slider-image-title">Glasses</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 2">
-                        <div class="slider-image-title">Landscape</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 3">
-                        <div class="slider-image-title">Cityscape</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 4">
-                        <div class="slider-image-title">Nature</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 5">
-                        <div class="slider-image-title">Architecture</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 6">
-                        <div class="slider-image-title">Abstract</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 7">
-                        <div class="slider-image-title">Sunset</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 8">
-                        <div class="slider-image-title">Flower</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 9">
-                        <div class="slider-image-title">Animal</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 10">
-                        <div class="slider-image-title">Food</div>
-                    </div>
-                </div>
-                <button class="slider-prev"><i class="fa-solid fa-circle-left"></i></button>
-                <button class="slider-next"><i class="fa-solid fa-circle-right"></i></button>
-            </div>
-        </div>
-
-        <!--TITULO + DESC SLIDER GRADUADAS-->
-
-        <div class="titulo_slider_desc">
-            <h3 class="titulo_slider_desc__title">Gafas Graduadas<span>.</span></h3>
-            <p class="titulo_slider_desc__description">
-                Variedad entre las mejores gafas de diseño. Tanto vintage como modernas.
-            </p>
-        </div>
-
-        <!--SLIDER GAFAS_DE_SOL-->
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slider-images">
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-2.jpg" alt="image 1">
-                        <div class="slider-image-title">Glasses</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/ray.jpg" alt="image 2">
-                        <div class="slider-image-title">Landscape</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 3">
-                        <div class="slider-image-title">Cityscape</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/ray.jpg" alt="image 4">
-                        <div class="slider-image-title">Nature</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 5">
-                        <div class="slider-image-title">Architecture</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 6">
-                        <div class="slider-image-title">Abstract</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 7">
-                        <div class="slider-image-title">Sunset</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 8">
-                        <div class="slider-image-title">Flower</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 9">
-                        <div class="slider-image-title">Animal</div>
-                    </div>
-                    <div class="slider-image">
-                        <img src="app/imgs/graduacion-1.jpeg" alt="image 10">
-                        <div class="slider-image-title">Food</div>
-                    </div>
-                </div>
-                <button class="slider-prev"><i class="fa-solid fa-circle-left"></i></button>
-                <button class="slider-next"><i class="fa-solid fa-circle-right"></i></button>
-            </div>
-        </div>
-
-        <!--TITULO + DESC SLIDER SOL-->
-        <div class="titulo_slider_desc">
-            <h3 class="titulo_slider_desc__title">Gafas de Sol<span>.</span></h3>
-            <p class="titulo_slider_desc__description">
-                Gafas de marca para protegerse del sol.
-            </p>
-        </div>
-
-        <!--PROPUESTA LIQUIDOS-->
-
-        <!--TITULO + DESC SLIDER SOL-->
-        <div class="titulo_slider_desc" id="propuesta_liquidos">
-            <img src="app/imgs/liquido.jpg" id="prupuesta_liquidos_imagen">
-            <div class="titulo_mas_desc_prop_liquidos">
-                <h3 class="titulo_slider_desc__title">Propuesta Liquidos<span>.</span></h3>
-                <p class="titulo_slider_desc__description">
-                    Liquidos para la mejora de las gafas.
-                </p>
-                <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
-            </div>
-        </div>
-
-        <!--CORDONES-->
-        <!--TITULO + DESC SLIDER SOL-->
-        <div class="titulo_slider_desc" id="propuesta_liquidos">
-            <img src="app/imgs/cordones.jpg">
-            <div class="titulo_mas_desc_prop_liquidos">
-                <h3 class="titulo_slider_desc__title">Cordones<span>.</span></h3>
-                <p class="titulo_slider_desc__description">
-                    Cordones coloridos para adultos y niños.
-                </p>
-            </div>
-        </div>
         <!----------------------------------------------->
         <!-------------------- SERVICIOS -------------------->
         <!----------------------------------------------->
-        <div class="cuadrado__negro__container_servicios">   
-            <div class="speciality section container" id="speciality2">
-                <div class="speciality__container">
-                    <div class="speciality__box">
-                        <h2 class="section__title">
-                            SERVICIOS
-                        </h2>
-
-                        <ul class="productos__filtro">
-                            <li class="productos__objeto productos__linea">
-                                <h3 class="productos__titulo">Graduaciones!</h3>
-                                <span class="productos__cantidad">20€ adultos / 13€ niños</span>
-                            </li>
-                
-                            <li class="productos__objeto">
-                                <h3 class="productos__titulo">Revisiones!</h3>
-                                <span class="productos__cantidad">25€ adultos / 16 niños</span>
-                            </li>
-                
-                            <li class="productos__objeto productos__linea">
-                                <h3 class="productos__titulo">Mantenimiento</h3>
-                                <span class="productos__cantidad">Reparación y ajuste de gafas.</span>
-                            </li>
-                
-                            <li class="productos__objeto">
-                                <h3 class="productos__titulo">Adaptación Lentillas</h3>
-                                <span class="productos__cantidad">Ajusta tus lentillas a ti.</span>
-                            </li>
-                        </ul>
-                        
+        <section class="servicios_general" id="servicios-general">
+            <div class="cuadrado__negro__container_servicios">   
+                <div class="speciality section container" id="speciality2">
+                    <div class="speciality__container">
+                        <div class="speciality__box">
+                            <h2 class="section__title">
+                                SERVICIOS
+                            </h2>
+    
+                            <ul class="productos__filtro">
+                                <li class="productos__objeto productos__linea">
+                                    <h3 class="productos__titulo">Graduaciones!</h3>
+                                    <span class="productos__cantidad">20€ adultos / 13€ niños</span>
+                                </li>
+                    
+                                <li class="productos__objeto">
+                                    <h3 class="productos__titulo">Revisiones!</h3>
+                                    <span class="productos__cantidad">25€ adultos / 16 niños</span>
+                                </li>
+                    
+                                <li class="productos__objeto productos__linea">
+                                    <h3 class="productos__titulo">Mantenimiento</h3>
+                                    <span class="productos__cantidad">Reparación y ajuste de gafas.</span>
+                                </li>
+                    
+                                <li class="productos__objeto">
+                                    <h3 class="productos__titulo">Adaptación Lentillas</h3>
+                                    <span class="productos__cantidad">Ajusta tus lentillas a ti.</span>
+                                </li>
+                            </ul>
+                            
+                        </div>
                     </div>
+                </div>
+            </div>
+    
+            <div class="titulo_slider_desc" id="propuesta_liquidos">
+                <img src="app/imgs/graduacion.jpg">
+                <div class="titulo_mas_desc_prop_liquidos">
+                    <h3 class="titulo_slider_desc__title">Graduaciones<span>.</span></h3>
+                    <p class="titulo_slider_desc__description">
+                        Graduaciones a medida que se ajustan a las necesidades del cliente.
+                    </p>
+                    <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
+                </div>
+            </div>
+    
+            <div class="titulo_slider_desc" id="propuesta_liquidos">
+                <img src="app/imgs/mantenimiento.jpg">
+                <div class="titulo_mas_desc_prop_liquidos">
+                    <h3 class="titulo_slider_desc__title">Mantenimiento<span>.</span></h3>
+                    <p class="titulo_slider_desc__description">
+                        Contamos con los mejores especialistas para reparar y ajustar las gafas.
+                    </p>
+                    <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
+                </div>
+            </div>
+    
+            <div class="titulo_slider_desc" id="propuesta_liquidos">
+                <img src="app/imgs/revision2.jpg">
+                <div class="titulo_mas_desc_prop_liquidos">
+                    <h3 class="titulo_slider_desc__title">Revisiones<span>.</span></h3>
+                    <p class="titulo_slider_desc__description">
+                        Revisiones oculares para comprobar el deterioro de la vista.
+                    </p>
+                    <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
+                </div>
+            </div>
+    
+            <div class="titulo_slider_desc" id="propuesta_liquidos">
+                <img src="app/imgs/lentillas.jpg">
+                <div class="titulo_mas_desc_prop_liquidos">
+                    <h3 class="titulo_slider_desc__title">Adaptación de lentillas<span>.</span></h3>
+                    <p class="titulo_slider_desc__description">
+                        Ajustes personalizados de lentillas. Que se ajustan a tus necesidades.
+                    </p>
+                    <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
+                </div>
+            </div>
+        </main>
+        </section>
+
+        <div class="slider_footer">
+            <div class="slider_footer_track">
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
+                </div>
+                <div class="slide_footer">
+                    <img src="app/imgs/3.png">
                 </div>
             </div>
         </div>
 
-        <div class="titulo_slider_desc" id="propuesta_liquidos">
-            <img src="app/imgs/graduacion.jpg">
-            <div class="titulo_mas_desc_prop_liquidos">
-                <h3 class="titulo_slider_desc__title">Graduaciones<span>.</span></h3>
-                <p class="titulo_slider_desc__description">
-                    Graduaciones a medida que se ajustan a las necesidades del cliente.
-                </p>
-                <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
-            </div>
-        </div>
+        <a href="#" class="flecha_desplazamiento_arriba" id="flecha_arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
 
-        <div class="titulo_slider_desc" id="propuesta_liquidos">
-            <img src="app/imgs/mantenimiento.jpg">
-            <div class="titulo_mas_desc_prop_liquidos">
-                <h3 class="titulo_slider_desc__title">Mantenimiento<span>.</span></h3>
-                <p class="titulo_slider_desc__description">
-                    Contamos con los mejores especialistas para reparar y ajustar las gafas.
-                </p>
-                <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
-            </div>
-        </div>
-
-        <div class="titulo_slider_desc" id="propuesta_liquidos">
-            <img src="app/imgs/revision2.jpg">
-            <div class="titulo_mas_desc_prop_liquidos">
-                <h3 class="titulo_slider_desc__title">Revisiones<span>.</span></h3>
-                <p class="titulo_slider_desc__description">
-                    Revisiones oculares para comprobar el deterioro de la vista.
-                </p>
-                <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
-            </div>
-        </div>
-
-        <div class="titulo_slider_desc" id="propuesta_liquidos">
-            <img src="app/imgs/lentillas.jpg">
-            <div class="titulo_mas_desc_prop_liquidos">
-                <h3 class="titulo_slider_desc__title">Adaptación de lentillas<span>.</span></h3>
-                <p class="titulo_slider_desc__description">
-                    Ajustes personalizados de lentillas. Que se ajustan a tus necesidades.
-                </p>
-                <a href="#" class="button speciality__button" id="button-speciality">VER MAS</a>
-            </div>
-        </div>
-    </main>
-
-    <div class="slider_footer">
-        <div class="slider_footer_track">
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-            <div class="slide_footer">
-                <img src="app/imgs/3.png">
-            </div>
-        </div>
-    </div>
     <!--FOOTER-->
-    <footer>
+    <section class="contacto_general" id="contacto-general">
+        <footer>
         
 
-        <!--<div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>SERVICIOS</h4>
-                    <ul>
-                        <li> <a href="">asasfsaf</a></li>
-                        <li> <a href="">sdfgsdgf</a></li>
-                        <li> <a href="">gsddgsgsd</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>LOGOS</h4>
-                    <ul>
-                        <li> <a href="">asasfsaf</a></li>
-                        <li> <a href="">sdfgsdgf</a></li>
-                        <li> <a href="">gsddgsgsd</a></li>
-                    </ul>
-                </div>
-                
-                
-                <div class="footer-col">
-                    <h4>MARCAS</h4>
-                    <ul>
-                        <li> <a href="">asasfsaf</a></li>
-                        <li> <a href="">sdfgsdgf</a></li>
-                        <li> <a href="">gsddgsgsd</a></li>
-                    </ul>
-                </div>
-
-                
-                <div id="rs" class="footer-col">
-                    <h4>REDES SOCIALES</h4>
-                    <a href="https://www.instagram.com/optica.ibaizabal/?hl=es"><img src="app/imgs/Instagram-Logo.png" alt="HOLA" width="100"></a> 
-                    <a href="https://es-es.facebook.com/optica.Ibaizabal/"><img src="app/imgs/facebook-logo.png" width="55"></a> 
-                </div>
-            </div>
-        </div>-->
-
-
-        <div class="footer__container container">
-            <h1 class="footer__title" id="footer-title-id">ÓPTICA IBAIZABAL</h1>
-            <div class="footer__content grid">
-                <div class="footer__data">
-                    <p class="footer__description">
-                        Subscribete para recibir mas informacion!
-                    </p>
-
-                    <div class="footer__newsletter">
-                        <input type="email" placeholder="Dirección de email" class="footer__input">
-                        <button class="footer__button">
-                            <i class="fa-solid fa-envelope"></i>
-                        </button>
+            <!--<div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>SERVICIOS</h4>
+                        <ul>
+                            <li> <a href="">asasfsaf</a></li>
+                            <li> <a href="">sdfgsdgf</a></li>
+                            <li> <a href="">gsddgsgsd</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>LOGOS</h4>
+                        <ul>
+                            <li> <a href="">asasfsaf</a></li>
+                            <li> <a href="">sdfgsdgf</a></li>
+                            <li> <a href="">gsddgsgsd</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="footer-col">
+                        <h4>MARCAS</h4>
+                        <ul>
+                            <li> <a href="">asasfsaf</a></li>
+                            <li> <a href="">sdfgsdgf</a></li>
+                            <li> <a href="">gsddgsgsd</a></li>
+                        </ul>
+                    </div>
+    
+                    
+                    <div id="rs" class="footer-col">
+                        <h4>REDES SOCIALES</h4>
+                        <a href="https://www.instagram.com/optica.ibaizabal/?hl=es"><img src="app/imgs/Instagram-Logo.png" alt="HOLA" width="100"></a> 
+                        <a href="https://es-es.facebook.com/optica.Ibaizabal/"><img src="app/imgs/facebook-logo.png" width="55"></a> 
                     </div>
                 </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__subtitle">Dirección</h2>
-                    <p class="footer__information">
-                        345 Avenida bizkaia 3.<br>
-                        Bilbao, La Peña
-                    </p>
-                    <img src="app/imgs/flag/rectangular.png" alt="ikurriña" class="footer__flag" width="40px">
+            </div>-->
+    
+    
+            <div class="footer__container container">
+                <h1 class="footer__title" id="footer-title-id">ÓPTICA IBAIZABAL</h1>
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <p class="footer__description">
+                            Subscribete para recibir mas informacion!
+                        </p>
+    
+                        <div class="footer__newsletter">
+                            <input type="email" placeholder="Dirección de email" class="footer__input">
+                            <button class="footer__button">
+                                <i class="fa-solid fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Dirección</h2>
+                        <p class="footer__information">
+                            345 Avenida bizkaia 3.<br>
+                            Bilbao, La Peña
+                        </p>
+                        <img src="app/imgs/flag/rectangular.png" alt="ikurriña" class="footer__flag" width="40px">
+                    </div>
+    
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Contacto</h2>
+                        <p class="footer__information">
+                            +34 954 675 334
+                        </p>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Horario</h2>
+                        <p class="footer__information">
+                            Lunes - Sabado<br>
+                            09:00AM - 19:30PM
+                        </p>
+                    </div>
                 </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__subtitle">Contacto</h2>
-                    <p class="footer__information">
-                        +34 954 675 334
-                    </p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__subtitle">Horario</h2>
-                    <p class="footer__information">
-                        Lunes - Sabado<br>
-                        09:00AM - 19:30PM
-                    </p>
+    
+                <div class="footer__group">
+                    <ul class="footer__redes_sociales">
+                        <a href="" class="footer__social_link" id="footer_instagram_incon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="footer__social_link" id="footer_facebook_incon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer__social_link" id="footer_twitter_incon">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                    </ul>
+                    <div class="footer_derechos_reservados">
+                        <span class="footer__derechos">
+                            <span>&#169;</span> Óptica Ibaizabal. Todos los derechos reservados.
+                        </span>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer__group">
-                <ul class="footer__redes_sociales">
-                    <a href="" class="footer__social_link" id="footer_instagram_incon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="" class="footer__social_link" id="footer_facebook_incon">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="" class="footer__social_link" id="footer_twitter_incon">
-                        <i class="fa-brands fa-square-twitter"></i>
-                    </a>
-                </ul>
-                <div class="footer_derechos_reservados">
-                    <span class="footer__derechos">
-                        <span>&#169;</span> Óptica Ibaizabal. Todos los derechos reservados.
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        
-    </footer>
+        </footer>
+    </section>
 
     <script src="app/js/main.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
